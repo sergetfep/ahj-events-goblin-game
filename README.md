@@ -6,7 +6,7 @@
 
 ## Github Pages
 
-https://sergetfep.github.io/ahj-events-goblin-game/
+Ссылка: [Игра с гоблинами](https://sergetfep.github.io/ahj-events-goblin-game)
 
 ## Описание
 
