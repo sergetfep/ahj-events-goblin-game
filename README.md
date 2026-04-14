@@ -38,4 +38,4 @@ yarn test
 
 ## Ссылка за задание
 
-Ссылка: [3.Обработка событий](https://github.com/netology-code/ahj-homeworks/tree/AHJ-50/events)
+Ссылка: [3. Обработка событий](https://github.com/netology-code/ahj-homeworks/tree/AHJ-50/events)
