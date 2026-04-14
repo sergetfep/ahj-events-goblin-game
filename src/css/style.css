@@ -118,7 +118,6 @@ body {
   transform: translateX(-50%);
   user-select: none;
   -webkit-user-drag: none;
-  /* pointer-events: none; */
 }
 
 @media (max-width: 620px) {
