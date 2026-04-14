@@ -8,13 +8,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: radial-gradient(
     circle at top,
-    #385d41 0%,
+    #345c3d 0%,
     #203726 45%,
     #16241a 100%
   );
   color: #fff8e6;
+}
+
+.game__board,
+.game__board * {
   cursor:
-    url('../img/hammer.svg') 10 28,
+    url('../img/hammer.png') 6 4,
     pointer;
 }
 
@@ -27,17 +31,17 @@ body {
   padding: 24px;
 }
 
-.title {
-  margin: 0 0 24px;
-  font-size: 32px;
-  text-align: center;
-}
-
 .game {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
+}
+
+.game__info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .scoreboard {
@@ -51,8 +55,8 @@ body {
 .scoreboard__item {
   min-width: 150px;
   padding: 12px 16px;
-  border-radius: 12px;
-  background: rgba(17, 28, 19, 0.72);
+  border-radius: 10px;
+  background: rgba(17, 28, 19, 0.58);
   border: 1px solid rgba(255, 248, 230, 0.12);
   text-align: center;
 }
@@ -61,7 +65,7 @@ body {
   display: block;
   margin-bottom: 6px;
   font-size: 13px;
-  color: rgba(255, 248, 230, 0.75);
+  color: rgba(255, 248, 230, 0.78);
 }
 
 .scoreboard__value {
@@ -77,6 +81,11 @@ body {
   font-size: 15px;
 }
 
+.game__board {
+  display: flex;
+  justify-content: center;
+}
+
 .game-board {
   display: grid;
   gap: 14px;
@@ -89,9 +98,9 @@ body {
   border-radius: 50%;
   background: radial-gradient(
     circle at 50% 35%,
-    #1f1d1a 0 32%,
-    #0d0c0a 33% 58%,
-    #46321b 59% 72%,
+    #1e1c19 0 32%,
+    #0c0b09 33% 58%,
+    #3f2e19 59% 72%,
     #2a1d10 73% 100%
   );
   box-shadow:
@@ -107,17 +116,19 @@ body {
   inset: 6px;
   border-radius: 50%;
   border: 1px solid rgba(255, 248, 230, 0.08);
+  pointer-events: none;
 }
 
 .goblin {
   position: absolute;
   left: 50%;
-  bottom: 12px;
-  width: 76px;
-  height: 76px;
+  bottom: 16px;
+  width: 72px;
+  height: 72px;
   transform: translateX(-50%);
   user-select: none;
   -webkit-user-drag: none;
+  z-index: 1;
 }
 
 @media (max-width: 620px) {
